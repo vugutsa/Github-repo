@@ -6,5 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class GithubReposService {
 
+
   constructor(private http: HttpClient) { }
+
+  // tslint:disable-next-line: typedef
+  getGithubPublicRepos(){
+  const username = 'vugutsa';
+  return this.http.get(`https://api.github.com/users/$(username)/repos`);
+  }
 }
