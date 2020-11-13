@@ -8,5 +8,12 @@ import { GithubReposService } from './github-repos.service';
 export class AppComponent {
   title = 'Github-repos';
 
+  gitHubRepositories: any = [];
   constructor(private myServiceRepo: GithubReposService){}
+
+  getRepositories(){
+    this.myServiceRepo.getGithubPublicRepos().subscribe(repos => {
+    this.gitHubRepositories = repos;
+    });
+  }
 }
