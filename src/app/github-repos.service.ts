@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -12,6 +12,6 @@ export class GithubReposService {
   // tslint:disable-next-line: typedef
   getGithubPublicRepos(){
   const username = 'vugutsa';
-  return this.http.get(`https://api.github.com/users/$(username)/repos`);
+  return this.http.get(`https://api.github.com/users/${username}/repos?access_token=834cb838e1347993561ef3c9f4edd04d921ee1ed`);
   }
 }
