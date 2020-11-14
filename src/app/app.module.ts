@@ -6,10 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule  } from "@angular/common/http";
 import { SearchComponent } from './search/search.component';
+import { GihubReposComponent } from './gihub-repos/gihub-repos.component';
+import { GithubFormComponent } from './github-form/github-form.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent
+    SearchComponent,
+    GihubReposComponent,
+    GithubFormComponent
   ],
   imports: [
     BrowserModule,
