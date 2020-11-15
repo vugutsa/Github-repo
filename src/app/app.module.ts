@@ -1,24 +1,28 @@
-// import { GithubReposService } from './github-repos.service';
+import { GithubReposService } from './github-repos.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule  } from "@angular/common/http";
-import { SearchComponent } from './search/search.component';
-import { GihubReposComponent } from './gihub-repos/gihub-repos.component';
+// import { GithubFormComponent } from './github-form/github-form.component';
+import { GithubReposComponent } from './github-repos/github-repos.component';
 import { GithubFormComponent } from './github-form/github-form.component';
+import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent,
-    GihubReposComponent,
-    GithubFormComponent
+    // GithubFormComponent,
+    GithubReposComponent,
+    GithubFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
