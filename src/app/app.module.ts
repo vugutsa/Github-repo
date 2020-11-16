@@ -10,13 +10,15 @@ import { GithubReposComponent } from './github-repos/github-repos.component';
 import { GithubFormComponent } from './github-form/github-form.component';
 import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
+import { DateCountPipe } from './date-count.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     // GithubFormComponent,
     GithubReposComponent,
     GithubFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
