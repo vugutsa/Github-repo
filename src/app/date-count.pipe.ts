@@ -18,10 +18,10 @@ export class DateCountPipe implements PipeTransform {
     // tslint:disable-next-line: prefer-const
     let dateCounter = dateDifferenceSeconds / secondsInDay;
 
-  //   if (dateCounter >= 1 && value < todayWithNoTime){
-  //     return dateCounter;
-  //   }else{
-  //     return 0;
-  //   }
-  // }
+    if (dateCounter >= 1 && value < todayWithNoTime){
+      return dateCounter;
+    }else{
+      return 0;
+    }
+  }
 }
